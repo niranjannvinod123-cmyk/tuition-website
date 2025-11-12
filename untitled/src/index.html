@@ -1,0 +1,29 @@
+<div class="quiz-container">
+  <h2>Tuition entry application</h2>
+
+  <div class="question" data-question="1">
+    <p>1. are you a girl?</p>
+    <button onclick="setAnswer(1, true, this)">Yes</button>
+    <button onclick="setAnswer(1, false, this)">No</button>
+  </div>
+
+  <div class="question" data-question="2">
+    <p>2. are you asian?</p>
+    <button onclick="setAnswer(2, true, this)">Yes</button>
+    <button onclick="setAnswer(2, false, this)">No</button>
+  </div>
+
+  <div class="question">
+    <p>3. whats your name?</p>
+    <input type="text" id="q3" placeholder="Type your answer...">
+  </div>
+
+  <div class="question">
+    <p>4. what subject would you like tuition for?</p>
+    <input type="text" id="q4" placeholder="Type your answer...">
+  </div>
+
+  <button id="submit-btn" onclick="checkAnswers()">Submit</button>
+
+  <p id="message"></p>
+</div>
